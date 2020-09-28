@@ -13,9 +13,7 @@ module.exports = function(app) {
     app.get("/api/notes/:id", function(req, res) {
 
         res.json(data[Number(req.params.id)]);
-
     });
-
 
     app.post("/api/notes", function(req, res) {
 
@@ -24,16 +22,15 @@ module.exports = function(app) {
         console.log(uniqueId);
         newNote.id = uniqueId;
         data.push(newNote);
-        
+
         fs.writeFileSync("./db/db.json", JSON.stringify(data), function(err) {
             if (err) throw (err);        
-        }); 
+        });
 
         res.json(data);    
 
     });
 
-    
     app.delete("/api/notes/:id", function(req, res) {
 
         let noteId = req.params.id;
