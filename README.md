@@ -9,4 +9,5 @@ This is a Node Express app that add, delete and save notes.
 ## Questions
 For any other questions, please send me an email at: isasanyang1986@yahoo.co.uk.
 
-![Note Taker](images/notetaker.gif )
+
+<img src="images/notetaker.gif" width="100%" height="auto">
