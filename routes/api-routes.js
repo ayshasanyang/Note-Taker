@@ -5,17 +5,9 @@ var data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 
 module.exports = function(app) {
 
-    // This GET request from API 
+    // This GET method  request from API 
     app.get("/api/notes", function(req, res) {
-       
         res.json(data);
-
-    });
-
-    // GET method Route request API data
-    app.get("/api/notes/:id", function(req, res) {
-
-        res.json(data[Number(req.params.id)]);
     });
 
     // POST method route 
@@ -32,7 +24,6 @@ module.exports = function(app) {
             if (err) throw (err);        
         });
         res.json(data);    
-
     });
 
     // This function deletes notes from the list 
