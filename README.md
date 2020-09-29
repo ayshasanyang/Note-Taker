@@ -13,6 +13,7 @@ This is a note-taking application that helps users to keep track of their activi
 - Type in your browser localhost:3000, that will show the app home page.
 - Click on the Get Started button, that will take you to the notes page.
 - In the note page you can type the title and the text - area of your note and click on save button. 
+- The app automatically add the notes inside the db.json file.
 - Use the delete button to delete any note.
 
 The app is currently deployed in heroku. It can be access by clicking on the link above.
