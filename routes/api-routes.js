@@ -12,7 +12,7 @@ module.exports = function(app) {
 
     });
 
-    // GET method Route
+    // GET method Route request API data
     app.get("/api/notes/:id", function(req, res) {
 
         res.json(data[Number(req.params.id)]);
