@@ -9,12 +9,13 @@ This is a Node Express app that add, delete and save notes.
 This is a note-taking application that helps users to keep track of their activity. The app can add,  delete, and save notes.
 
 - Open your terminal, run the command node server.js
-- In the terminal the the server listening port shows the PORT number.
-- Type in your browser localhost:3000, that will show the app home page.
+- In the terminal, the server listening port shows the PORT number.
+- Type in your browser localhost:3000, which will show the app home page.
 - Click on the Get Started button, that will take you to the notes page.
-- In the note page you can type the title and the text - area of your note and click on the save button. 
-- The app automatically add the notes inside the db.json file.
+- In the note page you can type the title and the text - area of your note and click on the Save button. 
+- The app automatically adds the notes inside the db.json file.
 - Use the delete button to delete any note.
+- When a note is deleted from the note-taking app, it also deletes from the db.json file.
 
 The app is currently deployed in heroku. It can be access by clicking on the link above.
 ## License
